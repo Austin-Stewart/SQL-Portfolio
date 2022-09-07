@@ -1,0 +1,1 @@
+SELECT * FROM covid_deaths.max_deaths_per_vaccination_percentage;
