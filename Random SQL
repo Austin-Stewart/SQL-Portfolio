@@ -8,3 +8,6 @@ WHERE P.IS_EVIL = 0 AND W.COINS_NEEDED = (SELECT MIN(COINS_NEEDED)
                                           ON (X.CODE = Y.CODE) 
                                           WHERE X.POWER = W.POWER AND Y.AGE = P.AGE) 
 ORDER BY W.POWER DESC, P.AGE DESC;
+
+Weather Station 17
+SELECT ROUND(LONG_W, 4) FROM STATION WHERE LAT_N > 38.7780 ORDER BY LAT_N LIMIT 1;
